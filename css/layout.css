@@ -1,0 +1,76 @@
+.book {
+  position: relative;
+  max-width: 900px;
+  width: 90%;
+  height: 480px;
+  background: transparent;
+  margin: 40px auto;
+}
+
+.page {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 40px 50px;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.18),
+    inset 0 0 0 1px rgba(255, 215, 120, 0.4);
+
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+}
+
+.page ul {
+  padding-left: 0;
+}
+
+.page.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.page h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #5a6b2f;
+}
+
+.page ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.page li {
+  font-size: 18px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e8e0b8;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px 10px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px 16px 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+footer a {
+  color: #ff7a18;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.seo-text {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  font-size: 0.9rem;
+  color: #6f7c5b;
+  text-align: center;
+}
